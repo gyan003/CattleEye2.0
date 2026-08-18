@@ -1,35 +1,55 @@
-export default function FilterBar({ selectedDate, setSelectedDate }) 
-{
+import { CalendarDays } from "lucide-react";
+
+export default function FilterBar({
+    selectedDate,
+    setSelectedDate
+}) {
+
     return (
-        <div className="w-full md:w-60">
+
+        <div className="relative w-full md:w-60">
+
+            <CalendarDays
+                size={18}
+                className="
+                    pointer-events-none
+                    absolute
+                    left-4
+                    top-1/2
+                    -translate-y-1/2
+                    text-gray-400
+                "
+            />
+
+
             <input
                 type="date"
                 value={selectedDate}
-                onChange={(e) => setSelectedDate(e.target.value)}
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                onChange={(e) =>
+                    setSelectedDate(e.target.value)
+                }
+                className="
+                    w-full
+                    rounded-xl
+                    border
+                    border-gray-200
+                    bg-gray-50
+                    py-3
+                    pl-11
+                    pr-4
+                    text-sm
+                    text-gray-700
+                    outline-none
+                    transition
+                    hover:border-gray-300
+                    focus:border-green-500
+                    focus:bg-white
+                    focus:ring-4
+                    focus:ring-green-100
+                "
             />
+
         </div>
+
     );
 }
-
-
-
-// export default function FilterBar() {
-
-//     return (
-
-//         <select className="rounded-xl border px-4 py-3">
-
-//             <option>All</option>
-
-//             <option>Today</option>
-
-//             <option>This Week</option>
-
-//             <option>This Month</option>
-
-//         </select>
-
-//     );
-
-// }
