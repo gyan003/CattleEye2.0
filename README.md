@@ -6,51 +6,62 @@ CattleEye 2.0 is a full-stack web application that uses **Artificial Intelligenc
 
 Users can upload a cattle image, send it to the AI-powered backend, receive the predicted breed and confidence score, and view previous predictions through the History section.
 
+# 📥  Clone the Repository
+
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd CattleEye2.0
+```
+
 ---
+#  Setup project 
+to setup the project open setup.md  
+
+### ./SETUP.md
+
 
 ## 🖼️ Project Preview
 
-> Add your screenshots to the `screenshots/` folder using the filenames below. GitHub will display them automatically.
 
 ### 🏠 Home Page
 
-![CattleEye Home Page](./screenshots/home.png)
+![CattleEye Home Page](./screenshots/home.jpg)
 
 ### 📤 Upload & Prediction
 
-![CattleEye Upload](./screenshots/upload.png)
+![CattleEye Upload](./screenshots/upload.jpg)
 
 ### 🤖 Prediction Result
 
-![CattleEye Prediction Result](./screenshots/result.png)
+![CattleEye Prediction Result](./screenshots/result.jpg)
 
 ### 📜 Prediction History
 
-![CattleEye History](./screenshots/history.png)
+![CattleEye History](./screenshots/history.jpg)
 
 ### 📱 Mobile View
 
-![CattleEye Mobile View](./screenshots/mobile.png)
+![CattleEye Mobile View](./screenshots/mobile.jpg)
 
 ---
 
 ## ✨ Features
 
-- 🐄 **AI Cattle Breed Prediction** — Upload a cattle image and predict its breed.
-- 📊 **Confidence Score** — Display the confidence associated with the prediction.
-- ☁️ **Cloud Image Storage** — Store uploaded images using Cloudinary.
-- 📜 **Prediction History** — Store and view previous predictions using MongoDB.
-- 🔎 **Search History** — Search prediction history by breed.
-- 📅 **Date Filtering** — Filter predictions by date.
-- 📱 **Responsive UI** — Designed for desktop and mobile devices.
-- ⚡ **FastAPI Backend** — REST API powered by FastAPI.
-- ⚛️ **React Frontend** — Interactive frontend built with React and Vite.
-- 💾 **Persistent Latest Result** — Keep the latest prediction available using browser localStorage.
-- 📷 **Mobile Image Input** — Take a photo or choose an image from the device.
+-  **AI Cattle Breed Prediction** — Upload a cattle image and predict its breed.
+-  **Confidence Score** — Display the confidence associated with the prediction.
+-  **Cloud Image Storage** — Store uploaded images using Cloudinary.
+- **Prediction History** — Store and view previous predictions using MongoDB.
+-  **Search History** — Search prediction history by breed.
+-  **Date Filtering** — Filter predictions by date.
+-  **Responsive UI** — Designed for desktop and mobile devices.
+-  **FastAPI Backend** — REST API powered by FastAPI.
+-  **React Frontend** — Interactive frontend built with React and Vite.
+-  **Persistent Latest Result** — Keep the latest prediction available using browser localStorage.
+-  **Mobile Image Input** — Take a photo or choose an image from the device.
 
 ---
 
-# 🏗️ Project Architecture
+#  Project Architecture
 
 ```text
                          ┌─────────────────────┐
@@ -98,7 +109,7 @@ Users can upload a cattle image, send it to the AI-powered backend, receive the 
 
 ---
 
-# 🛠️ Tech Stack
+#  Tech Stack
 
 ## Frontend
 
@@ -199,6 +210,7 @@ CattleEye2.0/
 ```
 
 ---
+
 
 # ⚙️ Getting Started
 
